@@ -1,6 +1,6 @@
 {
   "name": "luova/imageoptimizer",
-  "description": "Optimize images in your Laravel aplication",
+  "description": "Image Optimize in your Laravel aplication",
   "type": "library",
   "license": "MIT",
   "authors": [
