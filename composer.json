@@ -1,0 +1,19 @@
+{
+  "name": "luova/imageoptimizer",
+  "description": "This will tag pagckage",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mohammad Hasan",
+      "email": "hm91hassan@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Luova\\ImageOptimizer\\": "src/"
+    }
+  }
+}
