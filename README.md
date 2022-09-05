@@ -20,6 +20,29 @@ composer require luova/imageoptimizer
 ```
 
 
+# Setup
+
+## 1.1 ) if you are using Laravel before version 5.4, manually register the service provider in your config/app.php file
+
+```php
+Luova\ImageOptimizer\ImageOptimizerServiceProvider::class,
+```
+
+## 1.2 ) Here's how you can use it:
+
+```php
+
+    use Luova\ImageOptimizer\Optimizer;
+
+    $optimizer = new Optimizer();
+    // first parameter for image file path, second parameter for where you want save optimize image and third parameter for image qualify
+    $info = $optimizer->optimize($file, $optimize_path,80);
+
+```
+
+
+  
+
 # Any query
 
 * hm91hassan@gmail.com

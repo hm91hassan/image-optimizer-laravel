@@ -1,6 +1,6 @@
 {
   "name": "luova/imageoptimizer",
-  "description": "This will tag pagckage",
+  "description": "Optimize images in your Laravel aplication",
   "type": "library",
   "license": "MIT",
   "authors": [
