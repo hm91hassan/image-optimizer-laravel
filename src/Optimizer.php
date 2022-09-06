@@ -5,9 +5,12 @@ namespace Luova\ImageOptimizer;
 class Optimizer
 {
 
-    public function optimize($image_path, $save_path, $quality = 80)
+    public function optimize($image_path, $save_path = null, $quality = 80)
     {
         $main = $this->info($image_path);
+        if (!$save_path) {
+            $save_path = $image_path;
+        }
         //dd($main);
 
         switch ($main) {
