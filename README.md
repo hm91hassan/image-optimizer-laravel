@@ -47,10 +47,6 @@ Luova\ImageOptimizer\ImageOptimizerServiceProvider::class,
 ```
 
 
-
-
-  
-
 # Any query
 
 * hm91hassan@gmail.com
