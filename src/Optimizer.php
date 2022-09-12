@@ -2,12 +2,21 @@
 
 namespace Luova\ImageOptimizer;
 
+use Exception;
+use Illuminate\Contracts\Filesystem\FileNotFoundException;
+
 class Optimizer
 {
-
     public function optimize($image_path, $save_path = null, $quality = 80)
     {
+        if (!is_file($image_path)) {
+            // dd(is_file($image_path));
+            throw new FileNotFoundException($image_path." this File not found");
+        }
+
+
         $main = $this->info($image_path);
+        // dd($main);
         if (!$save_path) {
             $save_path = $image_path;
         }
@@ -33,8 +42,10 @@ class Optimizer
     public function info($file)
     {
         $info = @getimagesize($file);
-        if (isset($info['mime'])) {
 
+
+
+        if (isset($info['mime'])) {
             return $info['mime'];
         }
         return false;
